@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Nunito+Sans:opsz@6..12&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--text-color);
+    font-family: "Nunito Sans";
+
+}
+
+:root {
+    --main-color-website: #141C13;
+    --text-color: #FAF1E7;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background-color: var(--main-color-website);
+}
+
+#main {
+    width: 100%;
+}
+
+.nav {
+    height: 10vh;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0vh 5vh;
+    position: fixed;
+    z-index: 9;
+}
+
+.nav-left h3 a {
+    text-decoration-line: none;
+    font-weight: 300;
+}
+
+.nav-right a {
+    text-decoration-line: none;
+    font-weight: 300;
+}
+
+.hero {
+    background-color: var(--main-color-website);
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 17vh;
+    font-weight: 1;
+}
+
+.footer {
+    background-color: transparent;
+    height: 10vh;
+    width: 100%;
+    position: absolute;
+    bottom: 0vh;
+    padding: 0% 4vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 1;
+}
+
+.footer .footer-left {
+    height: 45px;
+    width: 37px;
+    background-color: transparent;
+    border-radius: 44%;
+    border: 1px solid white;
+}
+
+.ri-arrow-down-line {
+    position: relative;
+    top: 1.2vh;
+
+}
+
+.footer .footer-right {
+    height: 35px;
+    width: 35px;
+}
+
+/* page2 */
+.hero2 {
+    height: 100vh;
+    width: 100%;
+    background-color: var(--main-color-website);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+}
+
+.hero2 .left {
+    height: 75vh;
+    width: 43vh;
+    margin-left: 4vw;
+
+}
+
+.hero2 .left h2 {
+    position: absolute;
+    right: 151vh;
+    text-transform: uppercase;
+    font-size: 2vh;
+    margin-top: 1vh;
+}
+
+.hero2 .left h3 {
+    font-size: 3.4vh;
+}
+
+.hero2 .right {
+    height: 60vh;
+    width: 50vh;
+
+}
+
+.hero2 .right img {
+    height: inherit;
+}
+
+/* page3 */
+
+
+.page3 .hero3 {
+    height: 100vh;
+    width: 100%;
+    background-color: var(--main-color-website);
+    display: flex;
+    align-items: center;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.page3 .hero3 h1 {
+    font-size: 30vh;
+    white-space: nowrap;
+}
+
+/* page4 */
+.page4 {
+    width: 100%;
+}
+
+.page4 .hero4 {
+    height: 100vh;
+    width: 100%;
+    background-color: var(--main-color-website);
+    position: relative;
+}
+
+.pro {
+    height: 35vh;
+    width: 30vw;
+    white-space: nowrap;
+}
+
+.pro1 {
+    position: absolute;
+    top: 12vh;
+    left: 10vh;
+}
+
+.pro2 {
+    position: absolute;
+    top: 38vh;
+    left: 59vw;
+}
+
+/* page5 */
+.page5 {
+    width: 100%;
+}
+
+.page5 .hero5 {
+    height: 100vh;
+    width: 100%;
+    background-color: var(--main-color-website);
+    position: relative;
+}
+
+.page5 .hero5 .pro3 {
+    position: absolute;
+    top: 3vh;
+    left: 9vw;
+}
+
+.page5 .hero5 .pro4 {
+    position: absolute;
+    top: 38vh;
+    left: 60vw;
+}
+
+/* page6 */
+
+.page6 {
+    width: 100%;
+}
+
+.page6 .hero6 {
+    height: 100vh;
+    width: 100%;
+    background-color: var(--main-color-website);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-bottom: 1px solid white;
+}
+
+.page6 .hero6 .box {
+    border: 2px solid white;
+    height: 6vh;
+    width: 12vw;
+    text-align: center;
+    border-radius: 33px;
+    cursor: pointer;
+    position: absolute;
+}
+
+.page6 .hero6 .box h3 {
+    margin-top: 1vh;
+
+}
+
+.page6 .hero6 video {
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: all ease-in-out 1s;
+}
+
+
+/* page7 */
+
+
+.page7 {
+    width: 100%;
+}
+
+.page7 .hero7 {
+    background-color: var(--main-color-website);
+    height: 34vh;
+    width: 100%;
+    display: flex;
+}
+
+.page7 .hero7 .right{
+    background-color: black;
+    height: inherit;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.page7 .hero7 .left{
+    background-color: black;
+    height: inherit;
+  width: 50%;
+}
+.page7 .hero7 .right .box{
+    height: 5vh;
+    width: 3vw;
+    text-align: center;
+}
+.ri-instagram-line{
+    font-size: 5vh;
+}
+.ri-instagram-line:hover{
+    opacity:.5;
+    cursor: pointer;
+}
+.ri-linkedin-box-fill{
+    font-size: 5vh;
+}
+.ri-linkedin-box-fill:hover{
+    opacity: .5;
+    cursor: pointer;
+}
+.ri-github-fill{
+    font-size: 5vh;
+}
+.ri-github-fill:hover{
+    opacity:.5;
+    cursor: pointer;
+}
+.ri-discord-fill{
+    font-size: 5vh;
+}
+.ri-discord-fill:hover{
+    opacity: .5;
+    cursor: pointer;
+}
+.ri-mail-line{
+    font-size: 5vh;
+}
+
+.ri-mail-line:hover{
+    opacity: .5;
+    cursor: pointer;
+}
+
+
+
+.pro video{
+    height: inherit;
+    width: inherit;
+    transition: all ease-in-out 1s;
+}
