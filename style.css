@@ -1,3 +1,5 @@
+/* Default styles for all screen sizes */
+
 @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Nunito+Sans:opsz@6..12&display=swap');
 
 * {
@@ -6,7 +8,6 @@
     box-sizing: border-box;
     color: var(--text-color);
     font-family: "Nunito Sans";
-
 }
 
 :root {
@@ -14,8 +15,7 @@
     --text-color: #FAF1E7;
 }
 
-html,
-body {
+html, body {
     height: 100%;
     width: 100%;
     background-color: var(--main-color-website);
@@ -32,18 +32,18 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0vh 5vh;
+    padding: 2vh 5vw; /* Convert padding to vh and vw */
     position: fixed;
     z-index: 9;
 }
 
 .nav-left h3 a {
-    text-decoration-line: none;
+    text-decoration: none;
     font-weight: 300;
 }
 
 .nav-right a {
-    text-decoration-line: none;
+    text-decoration: none;
     font-weight: 300;
 }
 
@@ -68,8 +68,8 @@ body {
     height: 10vh;
     width: 100%;
     position: absolute;
-    bottom: 0vh;
-    padding: 0% 4vw;
+    bottom: 0;
+    padding: 0 4vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -78,8 +78,8 @@ body {
 }
 
 .footer .footer-left {
-    height: 45px;
-    width: 37px;
+    height: 5%;
+    width: 5%;
     background-color: transparent;
     border-radius: 44%;
     border: 1px solid white;
@@ -87,13 +87,12 @@ body {
 
 .ri-arrow-down-line {
     position: relative;
-    top: 1.2vh;
-
+    top: 1vh;
 }
 
 .footer .footer-right {
-    height: 35px;
-    width: 35px;
+    height: 4%;
+    width: 4%;
 }
 
 /* page2 */
@@ -111,12 +110,11 @@ body {
     height: 75vh;
     width: 43vh;
     margin-left: 4vw;
-
 }
 
 .hero2 .left h2 {
     position: absolute;
-    right: 151vh;
+    right: 151vw; /* Convert right to vw */
     text-transform: uppercase;
     font-size: 2vh;
     margin-top: 1vh;
@@ -129,7 +127,6 @@ body {
 .hero2 .right {
     height: 60vh;
     width: 50vh;
-
 }
 
 .hero2 .right img {
@@ -137,8 +134,6 @@ body {
 }
 
 /* page3 */
-
-
 .page3 .hero3 {
     height: 100vh;
     width: 100%;
@@ -175,7 +170,7 @@ body {
 .pro1 {
     position: absolute;
     top: 12vh;
-    left: 10vh;
+    left: 10vw;
 }
 
 .pro2 {
@@ -209,7 +204,6 @@ body {
 }
 
 /* page6 */
-
 .page6 {
     width: 100%;
 }
@@ -237,7 +231,6 @@ body {
 
 .page6 .hero6 .box h3 {
     margin-top: 1vh;
-
 }
 
 .page6 .hero6 video {
@@ -247,10 +240,7 @@ body {
     transition: all ease-in-out 1s;
 }
 
-
 /* page7 */
-
-
 .page7 {
     width: 100%;
 }
@@ -262,66 +252,70 @@ body {
     display: flex;
 }
 
-.page7 .hero7 .right{
+.page7 .hero7 .right {
     background-color: black;
     height: inherit;
-  width: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
-.page7 .hero7 .left{
+.page7 .hero7 .left {
     background-color: black;
     height: inherit;
-  width: 50%;
+    width: 50%;
 }
-.page7 .hero7 .right .box{
+
+.page7 .hero7 .right .box {
     height: 5vh;
     width: 3vw;
     text-align: center;
 }
-.ri-instagram-line{
-    font-size: 5vh;
-}
-.ri-instagram-line:hover{
-    opacity:.5;
-    cursor: pointer;
-}
-.ri-linkedin-box-fill{
-    font-size: 5vh;
-}
-.ri-linkedin-box-fill:hover{
-    opacity: .5;
-    cursor: pointer;
-}
-.ri-github-fill{
-    font-size: 5vh;
-}
-.ri-github-fill:hover{
-    opacity:.5;
-    cursor: pointer;
-}
-.ri-discord-fill{
-    font-size: 5vh;
-}
-.ri-discord-fill:hover{
-    opacity: .5;
-    cursor: pointer;
-}
-.ri-mail-line{
+
+/* Adjusting font-size in page7 */
+.ri-instagram-line,
+.ri-linkedin-box-fill,
+.ri-github-fill,
+.ri-discord-fill,
+.ri-mail-line {
     font-size: 5vh;
 }
 
-.ri-mail-line:hover{
-    opacity: .5;
-    cursor: pointer;
-}
-
-
-
-.pro video{
+.pro video {
     height: inherit;
     width: inherit;
     transition: all ease-in-out 1s;
+}
+
+/* Media queries for responsiveness */
+
+@media screen and (max-width: 768px) {
+    .nav {
+        padding: 2vh 3vw; /* Adjust padding for smaller screens */
+    }
+
+    .hero h1 {
+        font-size: 12vh; /* Adjust font size for smaller screens */
+    }
+
+    .hero2 .left h2 {
+        right: 120vw; /* Adjust right position for smaller screens */
+        font-size: 1.5vh; /* Adjust font size for smaller screens */
+        margin-top: 0.5vh; /* Adjust margin for smaller screens */
+    }
+
+    .hero2 .left h3 {
+        font-size: 2.5vh; /* Adjust font size for smaller screens */
+    }
+
+    .pro1 {
+        top: 8vh; /* Adjust top position for smaller screens */
+        left: 5vw; /* Adjust left position for smaller screens */
+    }
+
+    .pro2 {
+        top: 28vh; /* Adjust top position for smaller screens */
+        left: 45vw; /* Adjust left position for smaller screens */
+    }
 }
